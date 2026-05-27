@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const TIERS = [
   { min: 0,        label: "Ghost Flame",  color: "#ffb3d9" },
@@ -152,6 +153,7 @@ export default function App() {
       <div style={{ color: "#ffffff12", fontSize: 10, marginTop: 40, letterSpacing: 2 }}>
         BUILT BY YURIVERTI · POWERED BY UPSTASH + VERCEL
       </div>
+      <Analytics />
     </div>
   );
 }
